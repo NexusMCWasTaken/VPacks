@@ -1,0 +1,14 @@
+{
+    "name": "its-vezdehod/vpacks",
+    "type": "library",
+    "require-dev": {
+        "pocketmine/pocketmine-mp": "dev-stable"
+    },
+    "autoload": {
+        "psr-4": {
+            "ItsVezdehod\\Vpacks\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
