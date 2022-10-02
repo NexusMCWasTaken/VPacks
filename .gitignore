@@ -1,5 +1,6 @@
 # JetBrains IDE
 .idea/
 *.iml
+out/
 
 /vendor/
