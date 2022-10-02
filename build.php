@@ -72,7 +72,7 @@ if (!empty($localServerPath) && is_dir($localServerPath . "/plugins")) {
 	echo "[INFO]: Compiling.." . PHP_EOL;
 	generatePhar($localServerPath . "/plugins/" . $description["name"] . ($enable_version_suffix ? "_v" . $description["version"] : ""), $to);
 	echo "[INFO]: Starting server.." . PHP_EOL;
-	startServer();
+	//startServer();
 }
 /**
  * Function copyDirectory
