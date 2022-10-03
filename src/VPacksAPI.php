@@ -32,9 +32,9 @@ class VPacksAPI{
 	public function __construct(
 		private PluginBase $plugin,
 		private string $name,
+		private string $description,
 		private string $uuid,
-		private string $resourceUuid,
-		private string $description
+		private string $resourceUuid
 	){
 		self::setInstance($this);
 		$this->uiManager = new UIManager();
