@@ -100,7 +100,7 @@ class ResourcePackGenerator implements IPackSupplier {
         $this->addFromString("manifest.json", JsonSerializer::serialize([
             'format_version' => 2,
             'header' => [
-                'name' => "§l§9  «  §r§dCosmetic-X§r §l§9 »",
+                'name' => $this->name,
 				'uuid' => ($this->uuid = ($this->uuid ?? Uuid::uuid3(self::UUID_PACK_NAMESPACE, $this->checksumSource)->toString())),
                 'description' => $this->description,
                 'version' => VPacksAPI::updatePackVersion(new Config((is_null($vpacks) ? $apiDataFolder : $vpacksDataFolder) . ".pack_version.txt", Config::JSON, [0,0,0])),
