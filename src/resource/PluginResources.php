@@ -53,6 +53,7 @@ class PluginResources {
     }
 
     private function getInPackName(string $resourceRoot, string $file): string {
+		var_dump($resourceRoot . "/" . PrettyStringFactory::fromPlugin($this->plugin) . "/" . md5($file));
         return $resourceRoot . "/" . PrettyStringFactory::fromPlugin($this->plugin) . "/" . md5($file);
     }
 }
