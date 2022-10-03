@@ -26,9 +26,9 @@ class ResourcePackGenerator implements IPackSupplier {
     public function __construct(
         private string $path,
         private string $name,
+		private ?string $description = null,
         private ?string $uuid = null,
-        private ?string $resourceUuid = null,
-        private ?string $description = null
+        private ?string $resourceUuid = null
     ) {
         @unlink($this->path);
         $this->archive = new ZipArchive();
